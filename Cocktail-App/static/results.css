@@ -1,0 +1,219 @@
+:root {
+    --main-bg: #1e1e1e;        /* Donkere achtergrond */
+    --accent-hover: #ff6666;   /* Hover variant */
+    --text-light: #ffffff;     /* Witte tekst */
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBar{
+    background-color: var(--main-bg);
+    color: var(--text-light);
+    width: 100%;
+    height: 7vw;
+    font-size: 4rem;
+}
+
+.img-Self{
+    width: 20vw;
+    height: 20vw;
+    float: left;
+}
+.img-Self img{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #ccc;
+    padding: 5%;
+}
+
+.top{
+    width: 79.75%;
+    height: 20vw;
+    float: right;
+}
+
+.top-Bar{
+    width: 90%;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    float: right;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ingAndMeasures-Box{
+    width: 10%;
+    height: 65px;
+    float: left;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    margin-top: 2.6%;
+    margin-left: 4%;
+}
+
+.bottom{
+    width: 73.25%;
+    min-height: 18vw;
+    height: auto;
+    float: right;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    margin-top: 0.75%;
+    margin-right: 5%;
+}
+
+.details-Box{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 50px;
+    color: #A93226;
+    padding: 10px;
+    float: left;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    margin-top: 1.35%;
+    margin-left: 1.75%;
+}
+
+.details-Box-Header{
+    font-size: 1.5rem;
+    color: #ff4d4d;
+}
+
+.ResultsContainer{
+    width: 90%;
+    height: auto;
+    float: left;
+}
+
+.IndexContainer{
+    position: fixed;
+    width: 8%;
+    height: auto;
+    padding: 10px;
+    float: right;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.indexBtn{
+    
+    width: 90%;
+    height: 1.5vw;
+    background-color: #ff4d4d;
+    color: var(--text-light);
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 100px 1fr; /* Links afbeelding, rechts info */
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    float: right;
+    margin-left: 5.75%;
+    margin-bottom: 2%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.card-btn {
+    padding: 8px 12px;
+    background-color: #ff4d4d;
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pop-Up{
+    width: 90%;
+    height: 37.5vw;
+    color: white;
+    font-size: 7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 10px solid #ccc;
+
+    padding: 25px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+}
+
+.pop-Up-Btn{
+    width: 25%;
+    height: 5vw;
+    background-color: #ff4d4d;
+    color: var(--text-light);
+
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1{
+    color: var(--text-light);
+}
+
+p{
+    color: white;
+    font-size: 1.2rem;
+}

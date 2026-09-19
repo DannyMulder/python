@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Webpage</title>
+
+    <link rel="stylesheet" href="../static/results.css">
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+
+<body>
+<div class="mainBar c">Cocktails</div>
+
+<div class="container">
+    <div class="search-wide">
+        <div class="header b c">Search All</div>
+        <div class="info b">
+            <form method="post" action="/">
+                <div class="dropdown-box b c">
+                    Alcoholic?
+                    <input style="transform: scale(1.6);" type="checkbox" name="alcoholic" value="true">
+                </div>
+                <div class="dropdown-box b c">
+                    Category
+                    <select class="b" name="category">
+                        <option value="">Choose a category</option>
+                        <option value="Beer">Beer</option>
+                        <option value="Cocktail">Cocktail</option>
+                        <option value="Coffee / Tea">Coffee / Tea</option>
+                        <option value="Homemade Liqueur">Homemade Liqueur</option>
+                        <option value="Ordinary Drink">Ordinary Drink</option>
+                        <option value="Punch / Party Drink">Punch / Party Drink</option>
+                        <option value="Shake">Shake</option>
+                        <option value="Shot">Shot</option>
+                        <option value="Soft Drink">Soft Drink</option>
+                        <option value="Other / Unknown">Other / Unknown</option>
+                    </select>
+                </div>
+                <div class="dropdown-box b c">
+                    Ingredient
+                    <select class="b" style="width: 11vw" name="ingredient">
+                        <option value="">Choose a ingredient</option>
+                        {% for ing in ingredients %}
+                        <option value="{{ ing }}">{{ ing }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="dropdown-box b c">
+                    Sorting method
+                    <select class="b" name="sort">
+                        <option value="">Choose a sorting</option>
+                        <option value="A-Z">A-Z</option>
+                        <option value="Z-A">Z-A</option>
+                        {% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+                            <option value="{{ letter }}">{{ letter }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button class="big-button" type="submit" name="selectAll" value="true">Show all drinks (with sort)</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="search-narrow">
+        <div class="header b c">Search One</div>
+        <form method="post" action="/">
+            <div class="info b">
+                <input class="input b" type="text" name="cocktail" placeholder="Enter a name of a cocktail">
+                <button style="height: 5vw; margin-bottom: 5%; font-size: 2rem; border-radius: 10px" class="indexBtn" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

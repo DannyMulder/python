@@ -1,0 +1,95 @@
+.b{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+select { background-color: #ff4d4d; }
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 35vw;
+}
+
+.search-wide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 55%;
+    height: 35vw;
+}
+
+.header{
+    width: 100%;
+    height: 5vw;
+    color: #ccc;
+    font-size: 2.5rem;
+
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 25vw;
+    color: #ccc;
+
+    padding: 10px;
+}
+
+.big-button{
+    display: flex;
+    align-items: center;
+
+    height: 5vw;
+    background-color: #ff4d4d;
+    color: #ccc;
+
+    margin-left: 25.25%;
+    margin-top: 33.25%;
+
+    font-size: 2rem;
+    border-radius: 10px
+}
+
+.search-narrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 37.5%;
+    height: 35vw;
+
+    margin-left: 5.9%;
+}
+
+.input{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 5vw;
+    font-size: 2rem;
+}
+
+.input::placeholder{
+    text-align: center;
+}
+
+.dropdown-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 18.5%;
+    height: 4vw;
+
+    padding: 10px;
+    margin-left: 3%;
+    margin-top: 1%;
+
+    float: left;
+}
