@@ -1,4 +1,4 @@
-import os
+import os, ctypes
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "1"
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 import pygame
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         SCREEN.fill((0, 0, 0))
         SCREEN.blit(f.CreatImageElement("IMG/mainMenu.png", r.WIDTH, r.HEIGHT), (0, 0))
         deltaTime = CLOCK.tick(60) / 1000
-        
+                
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False

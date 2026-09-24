@@ -77,7 +77,7 @@ class Player:
     def displayHP(self):
         imgW = imgH = 50
         direction = imgW if self.id == 1 else -imgW
-        startPos = 10 if self.id == 1 else WIDTH - imgW - 10
+        startPos = 10 if self.id == 1 else WIDTH - (imgW - 10) * 3 - 10
         for i in range(self.hp):
             self.screen.blit(f.CreatImageElement("IMG/hart.png", imgW, imgH), (startPos + direction * i, 10))
         
